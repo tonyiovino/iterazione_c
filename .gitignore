@@ -1,1 +1,2 @@
-countdown.o
+*.o
+countdown
