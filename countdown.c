@@ -8,7 +8,6 @@ int main()
     intervallo.tv_nsec = 0;
     int contatore;
     int numero;
-    int sentinella = 0;
 
     printf("Conto alla rovescia:\n\n");
     printf("Da che numero devo partire? ");
@@ -16,7 +15,7 @@ int main()
 
     contatore = numero;
 
-    while(contatore != sentinella){
+    while(contatore > 0){
         printf("%d\n", contatore);
         nanosleep(&intervallo, NULL);
         contatore--;
