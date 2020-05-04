@@ -10,7 +10,7 @@ int main()
     printf("Numero di partenza: ");
     scanf("%d",&num);
     
-    while(contatore <= 4){
+    while(contatore < 5){
 
         printf("%d\n", num);
         num += 3;
