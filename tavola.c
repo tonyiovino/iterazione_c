@@ -8,7 +8,7 @@ int main(){
 
     num = 1;
     while(num <= 10){
-        printf("%d    ", num);
+        printf("%d     ", num);
 
         num++;
     }
@@ -17,7 +17,7 @@ int main(){
 
     num = 2;
     while(num <= 20){
-        printf("%d    ", num);
+        printf("%d     ", num);
 
         num += 2;
     }
@@ -26,7 +26,7 @@ int main(){
 
     num = 3;
     while(num <= 30){
-        printf("%d    ", num);
+        printf("%d     ", num);
 
         num += 3;
     }
