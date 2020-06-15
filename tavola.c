@@ -26,4 +26,4 @@ int main(){  /*Inizio della funzione main()*/
     }                        /*Finisce la funzione while()*/
 
     return 0;                /*Restitisce il valore 0 alla macchina*/
-}            /*Fine della funzione main()*/
+}            /*Fine della funzione main()*
