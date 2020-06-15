@@ -1,29 +1,29 @@
-#include <stdio.h>  /*Include le funzione che ci sono all'interno della libreria stdio.h*/
+#include <stdio.h>
 
-int main(){  /*Inizio della funzione main()*/
+int main(){
 
     int nc = 0;  /*Numero Colonna*/
     int nr = 0;  /*Numero Riga*/
     int np = 0;  /*Numero Prodotto*/
 
-    printf("Tavola Pitagorica:\n");  /*Stampa quello che c'è scritto all'interno delle stringe e va a capo.*/
+    printf("Tavola Pitagorica:\n");
 
-    nc = 1;  /*Assegna il valore 1 a nc*/
+    nc = 1;
 
-    while(nc <= 10){         /*Inizia la funzione while(Finché nc è minore o uguale a 10, fai questo:)*/
-        nr = 1;                  /*Assegna il valore 1 a nr*/
+    while(nc <= 10){
+        nr = 1;
 
-        while(nr <= 10){       /*Inizia la funzione while(Finché nr è minore o uguale a 10, fai questo:)*/
-            np = nc * nr;          /*Assegna il prodotto di nc e nr, a np*/
-            printf("%-5d", np);    /*Stampa np con spazi (Stampa in forma decimale con un minimo di 5 caratteri. Visto che non np è un intero, lascia gli spazi.)*/
+        while(nr <= 10){
+            np = nc * nr;
+            printf("%-5d", np);
 
-            nr++;                  /*nr viene incrementato di 1*/
-        }                      /*Finisce la funzione while()*/
+            nr++;
+        }
 
-        printf("\n");          /*Va a capo*/
+        printf("\n");
 
-        nc++;                  /*nc viene incrementato di 1*/
-    }                        /*Finisce la funzione while()*/
+        nc++;
+    }
 
-    return 0;                /*Restitisce il valore 0 alla macchina*/
-}            /*Fine della funzione main()*/
+    return 0;
+}
