@@ -1,99 +1,29 @@
-#include <stdio.h>
+#include <stdio.h>  /*Include le funzione che ci sono all'interno della libreria stdio.h*/
 
-int main(){
+int main(){  /*Inizio della funzione main()*/
 
-    int num = 0;
+    int nc = 0;  /*Numero Colonna*/
+    int nr = 0;  /*Numero Riga*/
+    int np = 0;  /*Numero Prodotto*/
 
-    printf("Tavola Pitagorica:\n");
+    printf("Tavola Pitagorica:\n");  /*Stampa quello che c'è scritto all'interno delle stringe e va a capo.*/
 
-    num = 1;
-    while(num <= 10){
-        printf("%-5d", num);
-        num++;
-    }
+    nc = 1;  /*Assegna il valore 1 a nc*/
 
-    printf("\n");
+    while(nc <= 10){         /*Inizia la funzione while(Finché nc è minore o uguale a 10, fai questo:)*/
+        nr = 1;                  /*Assegna il valore 1 a nr*/
 
-    num = 2;
-    while(num <= 20){
-        printf("%-5d", num);
+        while(nr <= 10){       /*Inizia la funzione while(Finché nr è minore o uguale a 10, fai questo:)*/
+            np = nc * nr;          /*Assegna il prodotto di nc e nr, a np*/
+            printf("%-5d", np);    /*Stampa np con spazi (Stampa in forma decimale con un minimo di 5 caratteri. Visto che non np è un intero, lascia gli spazi.)*/
 
-        num += 2;
-    }
+            nr++;                  /*nr viene incrementato di 1*/
+        }                      /*Finisce la funzione while()*/
 
-    printf("\n");
+        printf("\n");          /*Va a capo*/
 
-    num = 3;
-    while(num <= 30){
-        printf("%-5d", num);
+        nc++;                  /*nc viene incrementato di 1*/
+    }                        /*Finisce la funzione while()*/
 
-        num += 3;
-    }
-
-    printf("\n");
-
-    num = 4;
-    while(num <= 40){
-        printf("%-5d", num);
-
-        num += 4;
-    }
-
-    printf("\n");
-
-    num = 5;
-    while(num <= 50){
-        printf("%-5d", num);
-
-        num += 5;
-    }
-
-    printf("\n");
-
-    num = 6;
-    while(num <= 60){
-        printf("%-5d", num);
-
-        num += 6;
-    }
-
-    printf("\n");
-
-    num = 7;
-    while(num <= 70){
-        printf("%-5d", num);
-
-        num += 7;
-    }
-
-    printf("\n");
-
-    num = 8;
-    while(num <= 80){
-        printf("%-5d", num);
-
-        num += 8;
-    }
-
-    printf("\n");
-
-    num = 9;
-    while(num <= 90){
-        printf("%-5d", num);
-
-        num += 9;
-    }
-
-    printf("\n");
-
-    num = 10;
-    while(num <= 100){
-        printf("%-5d", num);
-
-        num += 10;
-    }
-
-    printf("\n");
-
-    return 0;
-}
+    return 0;                /*Restitisce il valore 0 alla macchina*/
+}            /*Fine della funzione main()*/
