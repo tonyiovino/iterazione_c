@@ -5,7 +5,7 @@ int main(){
     int numero;
     int maggiore;
     int count = 0;
-    
+
     printf("Inserisci 10 interi per determinare il maggiore.\n");
     scanf("%d", &maggiore);
 
@@ -15,7 +15,7 @@ int main(){
         if(numero > maggiore){
             maggiore = numero;
         }
-        
+
         count++;
     }
 
