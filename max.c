@@ -4,13 +4,22 @@ int main(){
 
     int numero;
     int maggiore;
-    int count;
+    int count = 0;
     
     printf("Inserisci 10 interi per determinare il maggiore.\n");
+    scanf("%d", &maggiore);
 
-    /*Prende 10 numeri e li confronta*/
+    while(count < 9){
+        scanf("%d", &numero);
 
-    printf("\nIl numero maggiore è: %d\n", maggiore);
+        if(numero > maggiore){
+            maggiore = numero;
+        }
+        
+        count++;
+    }
+
+    printf("\nIl numero maggiore è: %d\n\n", maggiore);
 
     return 0;
 }
