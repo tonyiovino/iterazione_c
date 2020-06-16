@@ -11,21 +11,26 @@ int main(){
     scanf("%d", &maggiore);
     scanf("%d", &maggiore_2);
 
+    if (maggiore < maggiore_2){
+        maggiore = maggiore_2;
+    }
+
     while(count < 8){
         scanf("%d", &numero);
 
         if(numero > maggiore){
             maggiore = numero;
         }
-
         if(numero < maggiore && numero > maggiore_2){
             maggiore_2 = numero;
         }
-
         count++;
     }
 
+
+
     printf("\nIl numero maggiore è: %d\n\n", maggiore);
+    printf("\nIl secondo numero maggiore è: %d\n\n", maggiore_2);
 
     return 0;
 }
