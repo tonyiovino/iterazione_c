@@ -3,31 +3,37 @@
 int main(){
 
     int numero;
-    int maggiore;
-    int maggiore_2;
+    int maggiore, maggiore_2;
     int count = 0;
 
-    printf("Inserisci 10 interi per determinare il maggiore.\n");
+    printf("Inserisci 10 interi per determinare i maggiori.\n");
     scanf("%d", &maggiore);
-    scanf("%d", &maggiore_2);
 
-    if (maggiore < maggiore_2){
-        maggiore = maggiore_2;
+    scanf("%d", &numero);
+
+    if(maggiore < numero){
+        maggiore_2 = maggiore;
+        maggiore = numero;
+    }
+
+    else if(maggiore > numero && maggiore_2 < numero){
+        maggiore_2 = numero;
     }
 
     while(count < 8){
         scanf("%d", &numero);
-
-        if(numero > maggiore){
-            maggiore = numero;
+        
+        if(maggiore < numero){
+        maggiore_2 = maggiore;
+        maggiore = numero;
         }
-        if(numero < maggiore && numero > maggiore_2){
+
+        if(maggiore_2 < numero){
             maggiore_2 = numero;
         }
+
         count++;
     }
-
-
 
     printf("\nIl numero maggiore è: %d\n\n", maggiore);
     printf("\nIl secondo numero maggiore è: %d\n\n", maggiore_2);
