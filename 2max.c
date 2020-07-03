@@ -16,7 +16,7 @@ int main(){
         maggiore = numero;
     }
 
-    else if(maggiore > numero && maggiore_2 < numero){
+    else{
         maggiore_2 = numero;
     }
 
