@@ -3,8 +3,8 @@
 int main(void)
 {
   int lato;
-  int H = '#';
-  int dis;
+  int cs = '*'; /*Carattere Speciale*/
+  int x = 0, y = 0;
 
 
   do {
@@ -17,9 +17,23 @@ int main(void)
 
   } while (lato < 1 || lato > 20);
 
-  dis = H * lato;
+  while(lato > x){
+    printf("%c", cs);
 
-  printf(dis);
+      while(lato > y){
+        printf("%c", cs);
+
+        y++;
+      }
+    
+    if(lato > x){
+    printf("\n");
+    }
+    
+    x++;
+  }
+
+
 
   return 0;
 }
