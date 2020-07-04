@@ -3,12 +3,12 @@
 int main(void)
 {
   int lato;
-  int cs = '*'; /*Carattere Speciale*/
-  int x = 0, y = 0;
-
+  int character = '*'; /*Carattere Speciale*/
+  int larghezza = 0;
+  int altezza;
 
   do {
-    printf("Inserisci il lato (min 1, max 20): ");
+    printf("Inserisci il lato (min 1, ma 20): ");
     scanf("%d", &lato);
 
     if(lato < 1 || lato > 20){
@@ -17,23 +17,19 @@ int main(void)
 
   } while (lato < 1 || lato > 20);
 
-  while(lato > x){
-    printf("%c", cs);
+  while(lato > larghezza){
 
-      while(lato > y){
-        printf("%c", cs);
+    altezza = 0;
+    while(lato > altezza){
+      putchar(character);
 
-        y++;
-      }
-    
-    if(lato > x){
-    printf("\n");
+      altezza++;
     }
+
+    putchar('\n');
     
-    x++;
+    larghezza++;
   }
-
-
 
   return 0;
 }
