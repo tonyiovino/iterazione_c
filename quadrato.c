@@ -4,8 +4,8 @@ int main(void)
 {
   int lato;
   int character = '*'; /*Carattere Speciale*/
-  int larghezza = 0;
-  int altezza;
+  int larghezza;
+  int altezza = 0;
 
   do {
     printf("Inserisci il lato (min 1, ma 20): ");
@@ -17,18 +17,18 @@ int main(void)
 
   } while (lato < 1 || lato > 20);
 
-  while(lato > larghezza){
+  while(altezza < lato){
 
-    altezza = 0;
-    while(lato > altezza){
+    larghezza = 0;
+    while(larghezza < lato){
       putchar(character);
 
-      altezza++;
+      larghezza++;
     }
 
     putchar('\n');
     
-    larghezza++;
+    altezza++;
   }
 
   return 0;
