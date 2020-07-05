@@ -3,7 +3,7 @@
 int main(void)
 {
   int lato;
-  int character = '*'; /*Carattere Speciale*/
+  int character = '$'; /*Carattere Speciale*/
   int larghezza;
   int altezza = 0;
 
