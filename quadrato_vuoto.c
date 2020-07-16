@@ -6,8 +6,8 @@ int main(void)
   int character = '$'; /*Carattere Speciale*/
   int larghezza;
   int altezza = 0;
-  int count = 0;
-  int half, spazi;
+  int count = 0, count_2 = 0;
+  int spazi;
 
   do {
     printf("Inserisci il lato (min 1, ma 20): ");
@@ -19,36 +19,30 @@ int main(void)
 
   } while (lato < 1 || lato > 20);
 
-  half = lato / 2;
+  spazi = lato - 2;
 
   while(altezza < lato){
-    if(count == half){
+
+    larghezza = 0;
+    while(larghezza < lato){
       putchar(character);
 
-      while(half == spazi){
-        putchar(' ');
+      larghezza++;
 
-        spazi++;
+      putchar('\n');
+      putchar(character);
 
-        if(spazi == half){
-          printf("\n");
+      if(count == 1){
+        while(spazi == count_2){
+          putchar(' ');
+
+          count_2++;
         }
       }
-      
     }
 
-    else{
-      larghezza = 0;
-      while(larghezza < lato){
-        putchar(character);
-
-        larghezza++;
-      }
-    }
-    putchar('\n');
-
+    count++;
     altezza++;
-    count ++;
   }
 
   return 0;
