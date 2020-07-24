@@ -7,6 +7,7 @@ int main(void)
   int larghezza;
   int altezza;
   int wf; /*Without Frist*/
+  int lt; /*Less Three*/
   int count = 0;
 
   do {
@@ -20,6 +21,7 @@ int main(void)
   } while (lato < 1 || lato > 20);
 
   wf = lato - 1;
+  lt = lato - 3;
 
   altezza = 0;
   while (altezza < lato) {
@@ -28,7 +30,7 @@ int main(void)
     larghezza = 1;
     while (larghezza < wf){
 
-      if (altezza >= wf || count <= 1) {
+      if (altezza >= wf || count <= lt) {
         putchar(character);
       }
 
