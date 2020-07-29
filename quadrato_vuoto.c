@@ -42,12 +42,14 @@ int main(void)
     altezza++;
   }
 
-  altezza = 0;
-  while (altezza < lato) {
-    putchar(character);
-    altezza++;
+  if (lato != 1){
+    altezza = 0;
+    while (altezza < lato) {
+      putchar(character);
+      altezza++;
+    }
+    putchar('\n');
   }
-  putchar('\n');
 
   return 0;
 }
