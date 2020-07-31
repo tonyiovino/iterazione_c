@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main()
 {
-  float raggio;
+  double raggio;
   double pigreco = 3.1415926535;
-  float superficie;
-  float circonferenza;
+  double superficie;
+  double circonferenza;
 
   printf("Inserisci il raggio: ");
   scanf("%f", &raggio);
