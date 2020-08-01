@@ -7,7 +7,7 @@ int main()
   double circonferenza;
 
   printf("Inserisci il raggio: ");
-  scanf("%f", &raggio);
+  scanf("%lf", &raggio);
 
   superficie = pigreco * raggio * raggio;
   circonferenza = 2.0 * pigreco * raggio;
