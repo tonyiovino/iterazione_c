@@ -19,7 +19,8 @@ int main()
   num4 = num % 10;
   num /= 10;
 
-  /*3a cifra*/
+  /*La 3a cifra non và salvata in una sua variabile, poiché inutile*/
+  /*Ma scaliamo di numero*/
   num /= 10;
 
   /*2a cifra*/
