@@ -3,37 +3,27 @@
 
 int main(void)
 {
-  int binario, decimale;
+  int binario, decimale = 0;
   int save_binario;
-  int posizione = 0;
-  int n_cifre;
-  int cifra;
-  int count = 0;
-  double potenza;
+  int peso = 1;
 
   printf("Inserisca un numero binario: ");
   scanf("%d", &binario);
 
   save_binario = binario;
 
-  while (binario != 0){
-    n_cifre = binario % 10;
+  while (binario > 0) {
+    if (binario % 10 > 0){
+      decimale += peso;
+    }
     binario /= 10;
+    peso *= 2;
   }
 
   binario = save_binario;
 
-  do {
-    while (posizione < n_cifre) {
-        binario /= 10;
-        cifra = binario % 10;
-        potenza = pow( 2, posizione );
-        decimale = cifra * potenza + decimale;
-        printf("%d", decimale);
-        count++;
-        posizione++;
-    }
-  } while (posizione < n_cifre);
+  printf("%d(2) ==> %d(10)\n", binario, decimale);
+
 
   return 0;
 }
