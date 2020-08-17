@@ -2,24 +2,31 @@
 
 int main()
 {
-  int num;
+  int riga, tot_righe;
   int carattere;
   int spazio;
-  int count;
 
   do {
     printf("Inserisci il numero delle righe (dispari): ");
-    scanf("%d", &num);
+    scanf("%d", &tot_righe);
     printf("\n");
 
-  }while ( (num < 0 || num > 19) || (num % 2 == 0) );
+  }while ( (tot_righe < 0 || tot_righe > 19) || (tot_righe % 2 == 0) );
 
-
-  for (carattere = 1; carattere >= num%2; carattere--){
-    for (spazio = 1; spazio < carattere; spazio++){
+  for (riga = 1; riga <= tot_righe; riga++){
+    for (spazio = tot_righe - riga; spazio >= 1; spazio--){
       putchar(' ');
     }
-    for (count = 0; count < spazio; count++){
+    for (carattere = 1; carattere <= (riga*2)-tot_righe; carattere++){
+      putchar('*');
+    }
+    printf("\n");
+  }
+  for (riga = tot_righe-1; riga >= 1; riga--){
+    for (spazio = 1; spazio <= tot_righe - riga; spazio++){
+      putchar(' ');
+    }
+    for (carattere = 1; carattere <= (riga*2)-tot_righe; carattere++){
       putchar('*');
     }
     printf("\n");
