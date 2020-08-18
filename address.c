@@ -2,7 +2,7 @@
 
 int main()
 {
-  int num[9];
+  int num[10];
   int count;
 
   for (count = 0; count < 10; count++) {

@@ -3,7 +3,7 @@
 int main()
 {
   int num;
-  int divisore = 1;
+  int divisore;
   int segno = 1;
   double pi_greco = 0;
   int count;
@@ -12,7 +12,7 @@ int main()
   scanf("%d", &num);
   printf("\n");
 
-  for (count = 0; count < num; count++, divisore+=2){
+  for (count = 0, divisore = 1; count < num; count++, divisore+=2){
     pi_greco = pi_greco + segno * 4./divisore;
     segno = - segno;
   }

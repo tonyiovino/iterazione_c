@@ -3,10 +3,10 @@
 int main()
 {
   char i_caratteri[] = "FL is better than Albeton";
-  int count;
+  int i;
 
-  for (count = 0; i_caratteri[count] > 0; count++) {
-    printf("%c  ", i_caratteri[count]);
+  for (i = 0; i_caratteri[i] != 0; i++) {
+    printf("%c  ", i_caratteri[i]);
   }
   printf("\n");
 
